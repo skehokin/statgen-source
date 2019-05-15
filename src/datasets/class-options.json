@@ -1,0 +1,26 @@
+{
+   "Strength": [
+      "Fighter",
+      "Monk"
+   ],
+   "Dexterity": [
+      "Ranger",
+      "Rogue"
+   ],
+   "Constitution": [
+      "Paladin",
+      "Barbarian"
+   ],
+   "Intelligence": [
+      "Wizard"
+   ],
+   "Wisdom": [
+      "Cleric",
+      "Druid"
+   ],
+   "Charisma": [
+      "Bard",
+      "Sorcerer",
+      "Warlock"
+   ]
+}

@@ -1,0 +1,131 @@
+{
+   "common":[
+      "human",
+      "elf",
+      "dwarf",
+      "halfling"
+   ],
+   "rare":[
+      "half-elf",
+      "half-orc",
+      "gnome",
+      "dragonborn",
+      "tiefling"
+   ],
+   "elfVariants":[
+      "high elf",
+      "wood elf",
+      "drow"
+   ],
+   "dwarfVariants":[
+      "mountain dwarf",
+      "hill dwarf"
+   ],
+   "halflingVariants":[
+      "stout halfling",
+      "lightfoot halfling"
+   ],
+   "gnomeVariants":[
+      "forest gnome",
+      "rock gnome"
+   ],
+   "elf":{
+      "stats":[
+         "Dexterity",
+         "Dexterity"
+      ],
+      "age":"7"
+   },
+   "human":{
+      "stats":[
+         "Strength",
+         "Dexterity",
+         "Constitution",
+         "Intelligence",
+         "Wisdom",
+         "Charisma"
+      ],
+      "age":"1"
+   },
+   "dwarf":{
+      "stats":[
+         "Constitution",
+         "Constitution"
+      ],
+      "age":"3.5"
+   },
+   "halfling":{
+      "stats":[
+         "Dexterity",
+         "Dexterity"
+      ],
+      "age":"2.5"
+   },
+   "half-elf":{
+      "stats":[
+         "Charisma",
+         "Charisma"
+      ],
+      "age":"1.9"
+   },
+   "half-orc":{
+      "stats":[
+         "Strength",
+         "Strength",
+         "Constitution",
+         "Constitution"
+      ],
+      "age":"0.75"
+   },
+   "gnome":{
+      "stats":[
+         "Intelligence",
+         "Intelligence"
+      ],
+      "age":"4"
+   },
+   "dragonborn":{
+      "stats":[
+         "Strength",
+         "Strength",
+         "Charisma"
+      ],
+      "age":"0.8"
+   },
+   "tiefling":{
+      "stats":[
+         "Intelligence",
+         "Charisma",
+         "Charisma"
+      ],
+      "age":"1.1"
+   },
+   "high elf":[
+      "Intelligence"
+   ],
+   "wood elf":[
+      "Wisdom"
+   ],
+   "drow":[
+      "Charisma"
+   ],
+   "mountain dwarf":[
+      "Strength",
+      "Strength"
+   ],
+   "hill dwarf":[
+      "Wisdom"
+   ],
+   "stout halfling":[
+      "Constitution"
+   ],
+   "lightfoot halfling":[
+      "Charisma"
+   ],
+   "forest gnome":[
+      "Dexterity"
+   ],
+   "rock gnome":[
+      "Constitution"
+   ]
+}
