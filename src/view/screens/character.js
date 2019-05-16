@@ -116,7 +116,7 @@ makeCharacter () {
 			/>
 
 
-			<Box>
+			<Box className='statsNshit'>
 				<VoiceText name={name} values={values} vocabulary={vocab}/>
 				<Box className='stat-list'>
 					<StatList stats={stats}/>

@@ -17,7 +17,7 @@ class Description extends Component {
 				<h1 className='name'>{titleCase(name.fullName)}</h1>
 					<Box className='wrap-descriptor'>
 						<Brackets>
-							<List className='descriptors' items={descriptors}/>
+							<List className='descriptors' items={descriptors} itemClass='descriptor'/>
 						</Brackets>
 					</Box>
 			</>
