@@ -1,5 +1,5 @@
 import listRand from '../utils/list-random'
- import {animals, leaders, livingAreas, allRaces} from './short-sets'
+ import {animals, leaders, livingAreas, allRaces, virtues} from './short-sets'
 
 export const valueGoals = {
 	'a quiet life': ['to escape violence', 'to find someone to settle down with', 'to find something to focus on', 'to escape from other people\'s plans', 'to find time to relax', 'to buy a cottage in the country' ],
@@ -53,14 +53,16 @@ export const valueGoals = {
 	"way of life": ['I am the last member of my culture. I must find someone to pass my history and language on to, or to spread the basics as far as possible.', 'reduce the influence of foreigners in my homeland'],
 	"safety": ['find a place hidden from my enemies', 'find a place hidden from my persecutors', 'become strong enough to keep those I care about safe'],
 	// TODO - fix these ones below up
-	'beauty': ['find something very pretty??', 'improve my personal aesthetics', 'make something very pretty??'],
+	'beauty': ['find something very pretty??', 'improve my personal aesthetics', 'make something incredibly beautiful'],
 	'daughters': ['protect my daughter', 'raise my daughter right', 'find my daughter', 'find the right man for my daughter to marry'],
 	'sons': ['protect my son', 'raise my son right', 'find my son', 'find the right woman for my son to marry'],
 	'children': ['protect my children', 'raise my children right', 'find my children', 'find a prestigious family for my children to marry into'],
 	'pets': ['get more pets', 'keep my pets safe', `get a pet ${listRand(animals)}`],
 	'dominance': [`take over the ${listRand(livingAreas)}`, `teach those in the ${listRand(livingAreas)} who is really in charge`, `become a ${listRand(leaders)}`],
 	'humility': ['to find the strength to accept my flaws'],
-
-	'destruction': [`destroy the ${listRand(livingAreas)}`, `kill the ${listRand(leaders)}`, `kill all the ${listRand(animals)}`],
+	'virtue': [`to be an exemplar of ${listRand(virtues)}`, `to teach all people of the virtue of ${listRand(virtues)}`],
+	'manliness': ['to become extremely buff', 'to grow a huge mustache', 'to find someone who can teach me to be as manly as he is'],
+	'destruction': [`destroy the ${listRand(livingAreas)}`, `kill the ${listRand(leaders)}`, `kill all the ${listRand(animals)}`, 'kill any who insult me'],
 	'race': ['destroy the misconception that any race is better than mine', `kill all ${listRand(allRaces)}`]
+
 	} ;
