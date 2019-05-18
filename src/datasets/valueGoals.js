@@ -1,5 +1,5 @@
 import listRand from '../utils/list-random'
- import {animals, leaders, livingAreas, allRaces, virtues} from './short-sets'
+ import {animals, leaders, livingAreas, allRaces, virtues, animalPlurals, peopleTypes} from './short-sets'
 
 export const valueGoals = {
 	'a quiet life': ['to escape violence', 'to find someone to settle down with', 'to find something to focus on', 'to escape from other people\'s plans', 'to find time to relax', 'to buy a cottage in the country' ],
@@ -47,7 +47,7 @@ export const valueGoals = {
 	'a collection': ['complete my collection', 'find a collection that isn\'t so horrifying'],
 	'my own life': ['to stay alive despite all the swords at my throat', 'to protect myself and not give into the desire to value my own life less than others\'', 'to discover immortality'],
  	'hotties': ['to bang someone really attractive', 'to become so attractive that others whistle when I walk down the street', 'to get together with someone so attractive that others whistle when we walk down the street', 'to see girls\' panties'],
- 	'animals': ['become an animal reserve warden', 'learn medicine and healing skills to take care of injured animals', `take out the hunters of rare ${listRand(animals)}`, `learn the wisdom of the ${listRand(animals)}`],
+ 	'animals': ['become an animal reserve warden', 'learn medicine and healing skills to take care of injured animals', `take out the hunters of rare ${listRand(animalPlurals)}`, `learn the wisdom of the ${listRand(animals)}`],
 	'sentient life': ['become less distance oriented in my morality - some people might say that I should value my friends or my race or my children more than others, but I know that all sentient creatures are similarly worthwhile. I want to care equally for those I have never met.'],
 	'opportunity': ['finding opportunity is a matter of placing myself in as many different situations as possible'],
 	"way of life": ['I am the last member of my culture. I must find someone to pass my history and language on to, or to spread the basics as far as possible.', 'reduce the influence of foreigners in my homeland'],
@@ -62,7 +62,7 @@ export const valueGoals = {
 	'humility': ['to find the strength to accept my flaws'],
 	'virtue': [`to be an exemplar of ${listRand(virtues)}`, `to teach all people of the virtue of ${listRand(virtues)}`],
 	'manliness': ['to become extremely buff', 'to grow a huge mustache', 'to find someone who can teach me to be as manly as he is'],
-	'destruction': [`destroy the ${listRand(livingAreas)}`, `kill the ${listRand(leaders)}`, `kill all the ${listRand(animals)}`, 'kill any who insult me'],
+	'destruction': [`destroy the ${listRand(livingAreas)}`, `kill the ${listRand(leaders)}`, `kill all the ${listRand(animalPlurals)}`, 'kill any who insult me',  `kill all the ${listRand(peopleTypes)}`],
 	'race': ['destroy the misconception that any race is better than mine', `kill all ${listRand(allRaces)}`]
 
 	} ;

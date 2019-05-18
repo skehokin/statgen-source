@@ -4,17 +4,14 @@ import traitOptions from '../datasets/personality-traits.json'
 import listRand from '../utils/list-random'
 
 
-//const traitOptions = JSON.parse(personality);
-
-
 const getDimensionScores = (lawAxis) => {
 	const personalityScores = Object.keys(traitOptions).reduce((scores, dimension) => {
 	 	const score = Math.random();
 
-	 	const organisedChaotic = lawAxis === 'chaotic' && dimension === "conscientious" && score < 0.25;
-	 	const messyLawful = lawAxis === 'lawful' && dimension === "conscientious" && score > 0.75;
-	 	const openLawful = lawAxis === 'lawful' && dimension === "open" && score < 0.25;
-	 	const restrictiveChaotic = lawAxis === 'chaotic' && dimension === "open" && score > 0.75;
+	 	const organisedChaotic = lawAxis === 'chaotic' && dimension === "conscientious" && score > 0.75;
+	 	const messyLawful = lawAxis === 'lawful' && dimension === "conscientious" && score < 0.25;
+	 	const openLawful = lawAxis === 'lawful' && dimension === "open" && score > 0.75;
+	 	const restrictiveChaotic = lawAxis === 'chaotic' && dimension === "open" && score < 0.25;
 
 	 	const anyUnlikely = organisedChaotic || messyLawful || openLawful || restrictiveChaotic ;
 

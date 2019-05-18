@@ -1,164 +1,166 @@
 {
    "conscientiousness":[
       [
-         "neat",
-         "messy"
+         "messy",
+         "neat"
+
       ],
       [
-         "orderly",
-         "disorganised"
+         "disorganised",
+         "orderly"
       ],
       [
-         "hard-working",
-         "lazy"
+         "lazy",
+         "hard-working"
       ],
       [
-         "uptight",
-         "laid-back"
+         "laid-back",
+         "uptight"
       ],
       [
-         "focused",
-         "distractible"
+         "distractible",
+         "focused"
+
       ],
       [
-         "ambitious",
-         "unambitious"
+         "unambitious",
+         "ambitious"
       ],
       [
-         "responsible",
-         "unreliable"
+         "unreliable",
+         "responsible"
       ]
    ],
    "agreeableness":[
       [
-         "peaceable",
-         "violent"
+         "violent",
+         "peaceable"
       ],
       [
-         "passive",
-         "antagonistic"
+         "antagonistic",
+         "passive"
       ],
       [
-         "kind-spoken",
-         "grumpy"
+         "grumpy",
+         "kind-spoken"
       ],
       [
-         "honest",
-         "deceptive"
+         "deceptive",
+         "honest"
       ],
       [
-         "polite",
-         "rude"
+         "rude",
+         "polite"
       ],
       [
-         "humble",
-         "arrogant"
+         "arrogant",
+         "humble"
       ],
       [
-         "forgiving",
-         "vindictive"
+         "vindictive",
+         "forgiving"
       ],
       [
-         "gentle",
-         "harsh"
+         "harsh",
+         "gentle"
       ]
    ],
    "extroversion":[
       [
-         "loves company",
-         "loves being alone"
+         "loves being alone",
+         "loves company"
       ],
       [
-         "dominates conversations",
-         "reserved"
+         "reserved",
+         "dominates conversations"
       ],
       [
-         "long-winded",
-         "terse"
+         "terse",
+         "long-winded"
       ],
       [
-         "loud-voiced",
-         "soft-spoken"
+         "soft-spoken",
+         "loud-voiced"
       ]
    ],
    "openness":[
       [
-         "adventurous",
-         "unadventurous"
+         "unadventurous",
+         "adventurous"
       ],
       [
-         "tolerant",
-         "judgemental"
+         "judgemental",
+         "tolerant"
       ],
       [
-         "gullible",
-         "skeptical"
+         "skeptical",
+         "gullible"
       ],
       [
-         "loves novelty",
-         "averse to new things"
+         "averse to new things",
+         "loves novelty"
       ],
       [
-         "imaginative",
-         "unimaginative"
+         "unimaginative",
+         "imaginative"
       ],
       [
-         "analytical",
-         "practical"
+         "practical",
+         "analytical"
       ],
       [
-         "fanciful",
-         "'sensible'"
+         "'sensible'",
+         "fanciful"
       ],
       [
-         "romantic in worldview",
-         "realistic in worldview"
+         "realistic in worldview",
+         "romantic in worldview"
       ],
       [
-         "spontaneous",
-         "stable in beliefs"
+         "stable in beliefs",
+         "spontaneous"
       ],
       [
-         "progressive",
-         "traditional"
+         "traditional",
+         "progressive"
       ]
    ],
    "neuroticism":[
       [
-         "tense",
-         "relaxed"
+         "relaxed",
+         "tense"
       ],
       [
-         "fearful",
-         "courageous"
+         "courageous",
+         "fearful"
       ],
       [
-         "cautious",
-         "rather foolhardy"
+         "rather foolhardy",
+         "cautious"
       ],
       [
-         "careful",
-         "careless"
+         "careless",
+         "careful"
       ],
       [
-         "pessimistic",
-         "optimistic"
+         "optimistic",
+         "pessimistic"
       ],
       [
-         "easily agitated",
-         " usually calm"
+         "usually calm",
+         "easily agitated"
       ],
       [
-         "insecure",
-         "confident"
+         "confident",
+         "insecure"
       ],
       [
-         "gloomy",
-         "cheerful"
+         "cheerful",
+         "gloomy"
       ],
       [
-         "distrusting",
-         "trusting"
+         "trusting",
+         "distrusting"
       ]
    ]
 }

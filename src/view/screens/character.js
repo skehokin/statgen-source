@@ -11,6 +11,7 @@ import getLikes from '../../genfuncs/get-likes';
 import getValues from '../../genfuncs/get-values';
 import getGoals from '../../genfuncs/get-goals';
 import getTraits from '../../genfuncs/get-traits';
+import getVocab from '../../genfuncs/get-vocab';
 
 import {vocabulary} from '../../datasets/vocabularies'
 import listRand from '../../utils/list-random'
@@ -57,11 +58,12 @@ class Character extends Component {
 	this.handleClick = this.handleClick.bind(this);
 	}
 
-updateStats (newStats){
-	this.setState({stats:newStats})
-}
+	updateStats (newStats){
+		this.setState({stats:newStats})
+	}
 
-makeCharacter () {
+	makeCharacter () {
+		window.scrollTo(0, 0);
 		const race = getRace();
 		const gender = getGender();
 		const name = getName(gender, race);
@@ -72,12 +74,10 @@ makeCharacter () {
 		const {likes, dislikes} = getLikes();
 		const values = getValues(alignment);
 		const goals = getGoals(values);
-		const vocab = vocabulary[listRand(Object.keys(vocabulary))];
 		const traits = getTraits(alignment.lawAxis);
-		console.log(traits);
-
+		const vocab = getVocab(traits.scores);
 		this.setState({traits, vocab, goals, values, likes, dislikes, alignment, race, name, gender, stats, age, charClass});
-}
+	}
 
 	componentDidMount(){
 		this.makeCharacter();
@@ -100,12 +100,6 @@ makeCharacter () {
 	return(
 		<Box className='appWrapper'>
 
-		<Box className='options'>
-			<button onClick={this.handleClick} className='button'>New Character!</button>
-			<Box className='button'>
-				<a href={this.getJson()} download={`${name.fullName}.json`}>Download Character as JSON</a>
-			</Box>
-			</Box>
 
 			<Description
 				name={name}
@@ -138,8 +132,16 @@ makeCharacter () {
 				<Traits traits={traits}/>
 
 			</Box>
+			<Box className='options'>
+				<button onClick={this.handleClick} className='button'>New Character!</button>
+				<Box className='button'>
+					<a href={this.getJson()} download={`${name.fullName}.json`}>Download Character as JSON</a>
+				</Box>
+			</Box>
+		</Box>
 
-</Box>
+
+
 
 	)
 	}
