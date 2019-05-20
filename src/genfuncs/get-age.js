@@ -26,11 +26,11 @@ export default function getAge (multiplier){
 
 
 export const applyAgeToStats = (stats, age) => {
-
+console.log('statsbefoer', stats)
 	const newStats =  _.reduce(stats, (all, statValue, statKey) => {
 		all[statKey] = statValue += ageChanges[age][statKey];
 		return all;
 	}, {} )
-
+console.log('stats after', newStats)
 	return newStats;
 }

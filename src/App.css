@@ -12,17 +12,18 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 5px;
   font-weight: 300;
   font-size: 1rem;
   flex-wrap: wrap;
-  max-width: 657px;
+  align-content: center;
 }
 
 .descriptor {
   display: flex;
   min-width: fit-content;
   align-content: center;
+  padding: 0 5px;
 }
 .name {
   display: flex;
@@ -38,39 +39,39 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
-ul{
+ul {
   padding: 10px;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 .bracket {
   font-size: 2.5rem;
   font-weight: 100;
 }
+.bracket-text {
+  margin-right: 30px
+}
 .wrap-descriptor {
   margin: 70px 0 40px 0;
+  max-width: 900px;
 }
-
 .statsNshit {
   flex-wrap: wrap;
-  flex-direction: flex-end;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  max-width: 900px;
 }
-
 .stat-element {
   text-align: right;
 }
-
 .stats {
   margin: auto;
 }
-
 .stat {
   margin-top:20px;
   align-items: center;
 }
-
 .stat-number {
   border-radius: 50%;
   border: 1px solid white;
@@ -81,7 +82,6 @@ li {
   align-items: center;
   margin-right: 20px;
   font-weight: 400;
-
 }
 .stats {
   width: 170px;
@@ -99,39 +99,71 @@ li {
   max-width: 657px;
 }
 
+.voice {
+  min-width: 430px;
+  width: calc( 50% + 15vw);
+}
+
 .voice-intro {
   margin-bottom: 10px;
 }
-
 .value-statement{
   font-style: italic;
 }
-/*.bottom-info {
-  width: calc(100% - 200px);
-}
-*/
+
 .info-box {
   width: 200px;
-  max-width:100%;
+  max-width: 100%;
 }
+
+  @media screen and ( max-width: 760px ) and ( min-width: 511px ) {
+    .wrap-descriptor {
+      max-width: 460px;
+
+      margin-bottom: 20px;
+    }
+    .stat-list {
+      min-width: 430px;
+    }
+    .voice {
+        width: 430px;
+    }
+
+  }
+
+
+@media screen and ( max-width: 760px ) {
+    .stat-list {
+      margin-right: 30px;
+      padding-bottom: 20px;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    .stats {
+      margin-bottom: 30px;
+      width: fit-content;
+    }
+    .bottom-info {
+      max-width: 600px
+    }
+
+}
+
 @media screen and ( max-width: 510px) {
   .glass-box {
     width: 100%;
+  }
+    .voice {
+    min-width: 90%;
   }
   .stat-list {
     min-width: 90%;
     margin-right: 30px;
   }
-/*  .info-box {
-    width: 100%;
-  }*/
   .descriptors {
     width: 100%;
-    margin-right: 30px;
   }
 }
-
-
 .info-box li {
   list-style: upper-roman;
   margin-top: 10px;
@@ -144,18 +176,15 @@ li {
   width: 200px;
   flex-wrap: wrap;
 }
-
 .wrap {
   flex-wrap: wrap;
 }
 .alignment {
-  margin-left: 10px;
   padding-top: 20px;
   border-top: 1px solid white;
   align-items: center;
   justify-content: center;
 }
-
 .alignment-acronym {
   border-radius: 50%;
   border: 1px solid white;
@@ -184,7 +213,7 @@ li {
   display: inline;
   color: white;
   max-width: 300px;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   text-align: center;
   margin-right: 10px;

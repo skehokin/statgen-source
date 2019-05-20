@@ -1,7 +1,6 @@
 
 const capitalise = (string) => {
 	if (string){
-		console.log('cpas', string)
 		return string ==='and' ? string : string[0].toUpperCase()+string.substring(1);
 	}
 	return 'Nameless'

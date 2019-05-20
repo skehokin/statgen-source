@@ -18,35 +18,67 @@ const getOrderedStats = (stats) => Object.keys(stats).sort((a, b) => stats[a] < 
 // needs more thinky.
 
 //logic is weird here. people keep getting wisdom classes with 14 wisdom etc.
-const getClassStat = (orderedStats, stats) => orderedStats[0] === 'Constitution' && stats.Strength <= 14 ? orderedStats[1] : orderedStats[0];
+const getClassStat = (orderedStats, highCon) => (highCon && orderedStats[0] === 'Constitution' ? orderedStats[1] : orderedStats[0]);
 
-const getClassFromStats = (stats) => {
+const getClassFromStats = stats => {
+
 	let charClass = [];
 	const orderedStats = getOrderedStats(stats);
-	console.log(orderedStats);
-	const bestStat = getClassStat(orderedStats, stats);
-	const getClassFromStat = (stat) => stats[stat] >= 15 ? listRand(classOptions[stat]) : (stats[stat]>12 ? listRand(jobOptions[stat]) : listRand(jobOptions.none))
+	const highCon = stats.Constitution >= 15 && stats.Strength < 14;
 
-	charClass.push(getClassFromStat(bestStat));
+	const bestStat = getClassStat(orderedStats, highCon);
+
+	const getClassFromStat = stat => {
+
+		if (stats[stat] >= 15 && !(highCon && stat === 'Constitution')){
+			return listRand(classOptions[stat]);
+		}
+		else if (stats[stat]>12) {
+			return listRand(jobOptions[stat]);
+		} else {
+			const noSkillJob = listRand(jobOptions.none);
+			return !charClass.includes(noSkillJob) ? noSkillJob : '';
+		}
+	}
+	const firstClass = getClassFromStat(bestStat)
+	if (firstClass) {
+		charClass.push(firstClass);
+	}
 
 	if (Math.random() < 0.3) {
-			charClass.push(getClassFromStat(bestStat === orderedStats[1] ? orderedStats[0] : orderedStats[1]));
+		let secondJobStat = '';
+
+			if(highCon){
+				secondJobStat = orderedStats[0];
+			} else {
+				secondJobStat = orderedStats[1]
+			}
+
+			const secondClass = getClassFromStat(secondJobStat);
+			if (secondClass) {
+				charClass.push(secondClass);
+			}
+
 		}
 	if (Math.random() < 0.07) {
-			charClass.push(getClassFromStat(orderedStats[2]));
+		const thirdClass = getClassFromStat(orderedStats[2])
+		if (thirdClass) {
+			charClass.push(thirdClass);
 		}
+	}
 
 	return charClass;
 }
 
-function getClass (stats, age, setStats) {
 
-	const foresighted = stats.Wisdom > 13
-	const updatedStats = applyAgeToStats(stats, age);
 
-	setStats(updatedStats);
+function getClass (stats, age) {
 
-return foresighted ? getClassFromStats(updatedStats) : getClassFromStats(stats);
+	const foresighted = stats.Wisdom > 11;
+	const adjustedStats = applyAgeToStats(stats, age);
+
+
+return { charClass: foresighted ? getClassFromStats(adjustedStats) : getClassFromStats(stats), adjustedStats};
 
 }
 

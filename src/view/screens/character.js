@@ -53,14 +53,10 @@ class Character extends Component {
 			}
 		};
 
-	this.updateStats = this.updateStats.bind(this);
 	this.makeCharacter = this.makeCharacter.bind(this);
 	this.handleClick = this.handleClick.bind(this);
 	}
 
-	updateStats (newStats){
-		this.setState({stats:newStats})
-	}
 
 	makeCharacter () {
 		window.scrollTo(0, 0);
@@ -69,14 +65,14 @@ class Character extends Component {
 		const name = getName(gender, race);
 		const stats = rollStats();
 		const age = getAge();
-		const charClass = getClass(stats, age.descriptor, this.updateStats);
+		const {charClass,  adjustedStats} = getClass(stats, age.descriptor);
 		const alignment = getAlignment();
 		const {likes, dislikes} = getLikes();
 		const values = getValues(alignment);
 		const goals = getGoals(values);
-		const traits = getTraits(alignment.lawAxis);
+		const traits = getTraits(alignment.lawAxis, stats);
 		const vocab = getVocab(traits.scores);
-		this.setState({traits, vocab, goals, values, likes, dislikes, alignment, race, name, gender, stats, age, charClass});
+		this.setState({stats: adjustedStats, traits, vocab, goals, values, likes, dislikes, alignment, race, name, gender, age, charClass});
 	}
 
 	componentDidMount(){
@@ -111,24 +107,26 @@ class Character extends Component {
 
 
 			<Box className='statsNshit'>
-				<VoiceText name={name} values={values} vocabulary={vocab}/>
 				<Box className='stat-list'>
 					<StatList stats={stats}/>
 					<Alignment alignment={alignment}/>
 				</Box>
+				<VoiceText name={name} values={values} vocabulary={vocab}/>
+
 			</Box>
 
 
 			<Box className='bottom-info wrap'>
-				<InfoBox>
-					<div>GOALS</div> <Box>{goals}</Box>
-				</InfoBox>
 				<InfoBox>
 					<div>LIKES</div> <List items={likes}/>
 				</InfoBox>
 				<InfoBox>
 					<div>DISLIKES</div> <List items={dislikes}/>
 				</InfoBox>
+				<InfoBox>
+					<div>GOALS</div> <Box>{goals}</Box>
+				</InfoBox>
+
 				<Traits traits={traits}/>
 
 			</Box>

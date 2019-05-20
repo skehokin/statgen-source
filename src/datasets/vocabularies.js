@@ -1,4 +1,6 @@
 
+import {capitalise} from '../utils/caps-formatter';
+
 
  const vocabulary = {
 elegant: {
@@ -12,7 +14,7 @@ elegant: {
 	no: "I'm afraid not"
 },
 elegant2: {
-	firstAnswer: (values) => `Most important is  ${values[0]}, of course.`,
+	firstAnswer: (values) => `most important is ${values[0]}, of course.`,
 	secondAnswer: (values) => `Second would be ${values[1]}`,
 	interjection: 'Why,',
 	considering: 'I would think',
@@ -20,11 +22,10 @@ elegant2: {
 	address: 'my dear friend,',
 	yes: 'certainly',
 	no: "I'm afraid not"
-}
-, crotchety: {
-	firstAnswer: (values) => ` ${values[0]}. The most important thing. You can learn from that.`,
+}, crotchety: {
+	firstAnswer: (values) => ` ${capitalise(values[0])}. The most important thing. You can learn from that.`,
 	secondAnswer: (values) => `Secondly, yeah, ${values[1]}`,
-	interjection: 'eugh ',
+	interjection: 'Eugh ',
 	considering: 'I reckon',
 	certain: " o'course",
 	address: 'ya stupid kid.',
@@ -32,7 +33,7 @@ elegant2: {
 	no: "get outta here!"
 }, joyful: {
 	firstAnswer: (values) => `Most important is ${values[0]}.`,
-	secondAnswer: (values) => `second to that is ${values[1]}`,
+	secondAnswer: (values) => `Second to that is ${values[1]}`,
 	interjection: 'A wonderful question,',
 	considering: 'perhaps?',
 	certain: " of course!",
@@ -51,7 +52,7 @@ elegant2: {
 }, silly: {
 	firstAnswer: (values) => `Most important is ${values[0]}, right?`,
 	secondAnswer: (values) => `Second is ${values[1]}`,
-	interjection: 'well ',
+	interjection: 'Well ',
 	considering: 'I guess?',
 	certain: "fo sho.",
 	address: 'friendo, ',
@@ -69,7 +70,7 @@ elegant2: {
 }, gloomy: {
 	firstAnswer: (values) => `I haven't been sure recently but ... I think it's ${values[0]}.`,
 	secondAnswer: (values) => `And second is ... ${values[1]}.`,
-	interjection: 'Sigh.',
+	interjection: 'Sigh. ',
 	considering: 'I ... guess, if you even care.',
 	certain: "That's what I think, if it even matters.",
 	address: '',
@@ -77,7 +78,7 @@ elegant2: {
 	no: "are you trying to make my life worse?"
 },  southern:{
 	firstAnswer: (values) => `Most important is ${values[0]}.`,
-	secondAnswer: (values) => `secondly  would have to be ${values[1]}`,
+	secondAnswer: (values) => `Secondly'd have to be ${values[1]}`,
 	interjection: 'Waal - ',
 	considering: "I s'pose!",
 	certain: "I'd reckon",
@@ -87,17 +88,17 @@ elegant2: {
 }, informal: {
 	firstAnswer: (values) => `most important is ${values[0]}.`,
 	secondAnswer: (values) => `Second would be ${values[1]}`,
-	interjection: 'Huh. Well,',
+	interjection: 'Huh. Well, ',
 	considering: "I s'pose!",
 	certain: "you know",
-	address: 'my friend,',
+	address: 'bud,',
 	yes: "sure thing!",
 	no: "nope"
 },
 
 intellectual: {
 	firstAnswer: (values) => `my main intrinsic value is ${values[0]}.`,
-	secondAnswer: (values) => ` Instrumental in attaining ${values[0]} is ${values[1]}. hence, I would call that second most valued.`,
+	secondAnswer: (values) => ` Instrumental in attaining ${values[0]} is ${values[1]}. Hence, I would call that second most valued.`,
 	interjection: 'Since you ask,',
 	considering: "",
 	certain: "",
@@ -109,7 +110,7 @@ intellectual: {
 sly: {
 	firstAnswer: (values) => `This is what is most important in this world: ${values[0]}. Don't look at me like that, you're the one who asked.`,
 	secondAnswer: (values) => ` And secondly, this one's for free - the second most important thing is ${values[1]}`,
-	interjection: 'well, kid, since you actually think it\'s worth asking me, I suppose I\'ll give you a good answer.',
+	interjection: 'Well, kid, since you actually think it\'s worth asking me, I suppose I\'ll give you a good answer.',
 	considering: "",
 	certain: "",
 	address: "",
@@ -119,7 +120,7 @@ sly: {
 
 reluctantProtag: {
 	firstAnswer: (values) => `At the moment, with the current situation, I've gotta value ${values[0]} the most.`,
-	secondAnswer: (values) => `"${values[1]}" rivals that but I can't make it top of my list right now.`,
+	secondAnswer: (values) => `"${capitalise(values[1])}" rivals that but I can't make it top of my list right now.`,
 	interjection: 'Ok, uhhh, weird question but I guess I\'ve thought about this a bit.' ,
 	considering: "",
 	certain: "",
@@ -139,7 +140,7 @@ oldGay: {
 	no: "nope"
 },
 contrary: {
-	firstAnswer: (values) => `${values[1]}.`,
+	firstAnswer: (values) => `${capitalise(values[1])}.`,
 	secondAnswer: (values) => `Definitely not ${values[0]}`,
 	interjection: '',
 	considering: "",
@@ -151,7 +152,7 @@ contrary: {
 practical: {
 	firstAnswer: (values) => `Throughout my life, I've found ${values[0]} to be most worthwhile.`,
 	secondAnswer: (values) => `Right now, I also think ${values[1]} is very important, but that's more a matter of how things are going down right now.`,
-	interjection: 'I s\'pose I have time to discuss things.',
+	interjection: 'I s\'pose I have time to discuss things. ',
 	considering: "",
 	certain: "",
 	address: "",
@@ -170,7 +171,7 @@ pompous: {
 },
 grizzled: {
 	firstAnswer: (values) => ` If you're facing the unexpected, you'll always need ${values[0]} and ${values[1]}. Sure, some might be able to get by without one of them for a time, but if you pay attention you'll notice that almost every veteran of this business who's still alive has at least a little of both.`,
-	secondAnswer: (values) => ` ${values[0]} and ${values[1]}, kid, they'll keep you alive.`,
+	secondAnswer: (values) => ` ${capitalise(values[0])} and ${values[1]}, kid, they'll keep you alive.`,
 	interjection: 'You\'re new, so you need to know this. Forgive me if you\'ve heard it before.',
 	considering: "",
 	certain: "",
@@ -179,7 +180,7 @@ grizzled: {
 	no: "nope"
 	},
 other: {
-	firstAnswer: (values) => `${values[0]}. This is of fundamental importance in my current endeavor."`,
+	firstAnswer: (values) => `${capitalise(values[0])}. This is of fundamental importance in my current endeavor."`,
 	secondAnswer: (values) => `They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
 	interjection: '',
 	considering: "",
@@ -200,7 +201,7 @@ other: {
 	optional: (values) => `In fact, the true answer is ${values[0]}`
 },
 	certain: {
-	firstAnswer: (values) => `What kind of questions is that? Who doesn't know that the most important thing in life is ${values[0]}?`,
+	firstAnswer: (values) => `What kind of question is that? Who doesn't know that the most important thing in life is ${values[0]}?`,
 	secondAnswer: (values) =>'',// `They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
 	interjection: '',
 	considering: "",
@@ -222,7 +223,7 @@ other: {
 },
 
 	frustrated: {
-	firstAnswer: (values) => `Augh, not another stupid philosophical question! Fine! ${values[0]}! Now will you go away and leave me alone?`,
+	firstAnswer: (values) => `Augh, not another stupid philosophical question! Fine! ${capitalise(values[0])}! Now will you go away and leave me alone?`,
 	secondAnswer: (values) => '', //`They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
 	interjection: '',
 	considering: "",
@@ -234,7 +235,7 @@ other: {
 },
 
 flirty: {
-	firstAnswer: (values) => `Baby, you know you're the most important thing in my life.`,
+	firstAnswer: (values) => "Baby, you know you're the most important thing in my life.",
 	secondAnswer: (values) => '', //`They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
 	interjection: '',
 	considering: "",
@@ -245,7 +246,7 @@ flirty: {
 	//optional: //(values)=>'What, you want more? What is it with you and these dumb questions?'
 },
 busy: {
-	firstAnswer: (values) => `I'm busy, but '${values[0]}'' is the simplest answer. I'll tell you more later.`,
+	firstAnswer: (values) => `I'm busy, but '${values[0]}' is the simplest answer. I'll tell you more later.`,
 	secondAnswer: (values) => '', //`They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
 	interjection: '',
 	considering: "",
@@ -279,10 +280,20 @@ loud: {
 	no: "nope",
 	//optional: //(values)=>'What, you want more? What is it with you and these dumb questions?'
 },
+russian: {
+	firstAnswer: (values) => `Think is '${values[0]}'.`,
+	secondAnswer: (values) => `Maybe is '${values[1]}'.`, //`They raise an eyebrow. "Oh, you want more? I suppose I'd also like ${values[1]}, but that can wait`,
+	interjection: "Is strange question.",
+	considering: "",
+	certain: "",
+	address: "",
+	yes: "sure thing!",
+	no: "nope",
+}
 
 };
 
-//age, personality traits, int?
+
 
 const traitVoiceMap = {
 	elegant: {'agreeableness':'high'},
@@ -295,7 +306,7 @@ const traitVoiceMap = {
 	gloomy: {'neuroticism':'high'},
 	southern: {'extroversion': 'notLow', 'agreeableness': 'notLow' },
 	informal:{'neuroticism': 'notHigh', 'agreeableness': 'notLow'},
-	intellectual: {},
+	intellectual: {'openness':'high',},
 	sly: {},
 	reluctantProtag: {'agreeableness':'notLow'},
 	oldGay: {'agreeableness':'notLow'},
@@ -303,15 +314,16 @@ const traitVoiceMap = {
 	practical: {'agreeableness':'notLow'},
 	pompous: {'agreeableness':'notHigh'},
 	grizzled: {'agreeableness':'high'},
-	other: {'agreeableness': 'middle'},
+	other: {'agreeableness': 'middle', 'openness':'high'},
 	rude: {'agreeableness':'low'},
-	certain: {'agreeablenes':'notHigh', 'neuroticism':'notLow', 'openness':'notHigh'},
-	academic: {'agreeableness':'middle'},
+	certain: {'agreeableness':'notHigh', 'neuroticism':'notLow', 'openness':'notHigh'},
+	academic: {'agreeableness':'middle', 'openness':'high',},
 	frustrated: {'agreeableness':'notHigh', 'openness':'notHigh'},
 	flirty: {'extroversion':'high'},
 	busy: {'conscientiousness':'high', 'extroversion':'low'},
 	jiira: {extroversion: 'high', agreeableness: 'high'},
-	loud: {extroversion: 'high', agreeableness: 'notLow', neuroticism: 'notLow'}
+	loud: {extroversion: 'high', agreeableness: 'notLow', neuroticism: 'notLow'},
+	russian: {},
 }
 
 export {vocabulary, traitVoiceMap};

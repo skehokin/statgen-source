@@ -12,7 +12,7 @@ const vocab = vocabulary[vocabName];
 const requirements = traitVoiceMap[vocabName];
 let meetsRequirements = true;
 
-console.log(requirements)
+
 for (let trait in requirements) {
 	const wordDescription = requirements[trait];
 console.log(wordDescription, 'trait', trait, 'score', scores[trait]);

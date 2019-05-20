@@ -191,7 +191,8 @@
       "si",
       "shi",
       "adre",
-      "cas"
+      "cas",
+      "ran"
    ],
    "female": [
       "na",
@@ -251,6 +252,7 @@
       "andra"
    ],
    "male": [
+      "didly",
       "am",
       "ix",
       "lix",
@@ -516,7 +518,8 @@
       "thistle",
       "witch",
       "father",
-      "hammer"
+      "hammer",
+      "hater"
    ],
    "quenya": {
       "father": "atar",
