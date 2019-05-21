@@ -1,24 +1,23 @@
-
 // TODO add true randomness to this one.
 
 function roll() {
-	var fourrolls = [];
+  var fourrolls = [];
 
-	for(let i=0; i<4; i++){
-		fourrolls.push(parseInt(Math.ceil(Math.random()*6)));
-	}
+  for (let i = 0; i < 4; i++) {
+    fourrolls.push(parseInt(Math.ceil(Math.random() * 6)));
+  }
 
-	var findlowest=fourrolls.indexOf(Math.min.apply(null, fourrolls));
+  var findlowest = fourrolls.indexOf(Math.min.apply(null, fourrolls));
 
-	fourrolls.splice(findlowest, 1);
+  fourrolls.splice(findlowest, 1);
 
-	var total = 0;
+  var total = 0;
 
-	for (let each of fourrolls) {
-		total +=each;
-	}
+  for (let each of fourrolls) {
+    total += each;
+  }
 
-	return total;
+  return total;
 }
 
 export default roll;

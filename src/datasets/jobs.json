@@ -1,76 +1,83 @@
 {
-   "Strength":[
-      "laborer",
-      "builder",
-      "blacksmith",
-      "boxer",
-      "street fighter",
-      "mugger",
-      "miner",
-      "bodyguard"
-   ],
-   "Dexterity":[
-      "weaver",
-      "artist",
-      "tailor",
-      "acrobat",
-      "surgeon",
-      "rat catcher",
-      "pickpocket",
-      "glass-blower",
-      "assassin",
-      "barber",
-      "petty thief"
-   ],
-   "Constitution":[
-      "farmer",
-      "watchman",
-      "cleaner",
-      "fisherman",
-      "trash collector"
-   ],
-   "Intelligence":[
-      "engineer",
-      "astronomer",
-      "historian",
-      "philosopher",
-      "device-maker",
-      "scholar of languages",
-      "tactician",
-      "mathematician",
-      "architect",
-      "anthropologist",
-      "apothecary",
-      "teacher",
-      "botanist",
-      "clerk",
-      "scribe"
-   ],
-   "Wisdom":[
-      "vet",
-      "carpenter",
-      "printer",
-      "brewer",
-      "chef",
-      "gardener",
-      "food craftsman",
-      "leatherworker",
-      "falconer",
-      "potter"
-   ],
-   "Charisma":[
-      "politician",
-      "merchant",
-      "fortune teller",
-      "herald",
-      "actor",
-      "prostitute",
-      "storyteller",
-      "street performer",
-      "minstrel",
-      "jester",
-      "gang leader",
-      "aristocrat"
-   ],
-   "none": ["alcoholic", "eccentric", "gang member", "beggar", "town crazy", "professional nuisance"]
+  "Strength": [
+    "laborer",
+    "builder",
+    "blacksmith",
+    "boxer",
+    "street fighter",
+    "mugger",
+    "miner",
+    "bodyguard"
+  ],
+  "Dexterity": [
+    "weaver",
+    "artist",
+    "tailor",
+    "acrobat",
+    "surgeon",
+    "rat catcher",
+    "pickpocket",
+    "glass-blower",
+    "assassin",
+    "barber",
+    "petty thief"
+  ],
+  "Constitution": [
+    "farmer",
+    "watchman",
+    "cleaner",
+    "fisherman",
+    "trash collector"
+  ],
+  "Intelligence": [
+    "engineer",
+    "astronomer",
+    "historian",
+    "philosopher",
+    "device-maker",
+    "scholar of languages",
+    "tactician",
+    "mathematician",
+    "architect",
+    "anthropologist",
+    "apothecary",
+    "teacher",
+    "botanist",
+    "clerk",
+    "scribe"
+  ],
+  "Wisdom": [
+    "vet",
+    "carpenter",
+    "printer",
+    "brewer",
+    "chef",
+    "gardener",
+    "food craftsman",
+    "leatherworker",
+    "falconer",
+    "potter"
+  ],
+  "Charisma": [
+    "politician",
+    "merchant",
+    "fortune teller",
+    "herald",
+    "actor",
+    "prostitute",
+    "storyteller",
+    "street performer",
+    "minstrel",
+    "jester",
+    "gang leader",
+    "aristocrat"
+  ],
+  "none": [
+    "alcoholic",
+    "eccentric",
+    "gang member",
+    "beggar",
+    "town crazy",
+    "professional nuisance"
+  ]
 }

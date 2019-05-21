@@ -1,166 +1,50 @@
 {
-   "conscientiousness":[
-      [
-         "messy",
-         "neat"
-
-      ],
-      [
-         "disorganised",
-         "orderly"
-      ],
-      [
-         "lazy",
-         "hard-working"
-      ],
-      [
-         "laid-back",
-         "uptight"
-      ],
-      [
-         "distractible",
-         "focused"
-
-      ],
-      [
-         "unambitious",
-         "ambitious"
-      ],
-      [
-         "unreliable",
-         "responsible"
-      ]
-   ],
-   "agreeableness":[
-      [
-         "violent",
-         "peaceable"
-      ],
-      [
-         "antagonistic",
-         "passive"
-      ],
-      [
-         "grumpy",
-         "kind-spoken"
-      ],
-      [
-         "deceptive",
-         "honest"
-      ],
-      [
-         "rude",
-         "polite"
-      ],
-      [
-         "arrogant",
-         "humble"
-      ],
-      [
-         "vindictive",
-         "forgiving"
-      ],
-      [
-         "harsh",
-         "gentle"
-      ]
-   ],
-   "extroversion":[
-      [
-         "loves being alone",
-         "loves company"
-      ],
-      [
-         "reserved",
-         "dominates conversations"
-      ],
-      [
-         "terse",
-         "long-winded"
-      ],
-      [
-         "soft-spoken",
-         "loud-voiced"
-      ]
-   ],
-   "openness":[
-      [
-         "unadventurous",
-         "adventurous"
-      ],
-      [
-         "judgemental",
-         "tolerant"
-      ],
-      [
-         "skeptical",
-         "accepts strange ideas"
-      ],
-      [
-         "averse to new things",
-         "loves novelty"
-      ],
-      [
-         "unimaginative",
-         "imaginative"
-      ],
-      [
-         "practical",
-         "analytical"
-      ],
-      [
-         "'sensible'",
-         "fanciful"
-      ],
-      [
-         "realistic in worldview",
-         "romantic in worldview"
-      ],
-      [
-         "stable in beliefs",
-         "spontaneous"
-      ],
-      [
-         "traditional",
-         "progressive"
-      ]
-   ],
-   "neuroticism":[
-      [
-         "relaxed",
-         "tense"
-      ],
-      [
-         "courageous",
-         "fearful"
-      ],
-      [
-         "rather foolhardy",
-         "cautious"
-      ],
-      [
-         "careless",
-         "careful"
-      ],
-      [
-         "optimistic",
-         "pessimistic"
-      ],
-      [
-         "usually calm",
-         "easily agitated"
-      ],
-      [
-         "confident",
-         "insecure"
-      ],
-      [
-         "cheerful",
-         "gloomy"
-      ],
-      [
-         "trusting",
-         "distrusting"
-      ]
-   ]
+  "conscientiousness": [
+    ["messy", "neat"],
+    ["disorganised", "orderly"],
+    ["lazy", "hard-working"],
+    ["laid-back", "uptight"],
+    ["distractible", "focused"],
+    ["unambitious", "ambitious"],
+    ["unreliable", "responsible"]
+  ],
+  "agreeableness": [
+    ["violent", "peaceable"],
+    ["antagonistic", "passive"],
+    ["grumpy", "kind-spoken"],
+    ["deceptive", "honest"],
+    ["rude", "polite"],
+    ["arrogant", "humble"],
+    ["vindictive", "forgiving"],
+    ["harsh", "gentle"]
+  ],
+  "extroversion": [
+    ["loves being alone", "loves company"],
+    ["reserved", "dominates conversations"],
+    ["terse", "long-winded"],
+    ["soft-spoken", "loud-voiced"]
+  ],
+  "openness": [
+    ["unadventurous", "adventurous"],
+    ["judgemental", "tolerant"],
+    ["skeptical", "accepts strange ideas"],
+    ["averse to new things", "loves novelty"],
+    ["unimaginative", "imaginative"],
+    ["practical", "analytical"],
+    ["'sensible'", "fanciful"],
+    ["realistic in worldview", "romantic in worldview"],
+    ["stable in beliefs", "spontaneous"],
+    ["traditional", "progressive"]
+  ],
+  "neuroticism": [
+    ["relaxed", "tense"],
+    ["courageous", "fearful"],
+    ["rather foolhardy", "cautious"],
+    ["careless", "careful"],
+    ["optimistic", "pessimistic"],
+    ["usually calm", "easily agitated"],
+    ["confident", "insecure"],
+    ["cheerful", "gloomy"],
+    ["trusting", "distrusting"]
+  ]
 }
