@@ -20,6 +20,7 @@ import InfoBox from "../components/info-box";
 import List from "../components/list";
 import Traits from "../components/traits";
 import Alignment from "../components/alignment";
+import CharacterSheet from "../components/character-sheet";
 
 class Character extends Component {
   constructor(props) {
