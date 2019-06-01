@@ -1,4 +1,3 @@
-import pdfform from "pdfform.js";
 import charSheetFile from "../resources/character_sheet.pdf";
 
 export default function getPDF() {
@@ -11,9 +10,4 @@ export default function getPDF() {
   fetch(charSheetFile).then(r =>
     r.blob().then(blop => reader.readAsArrayBuffer(blop))
   );
-
-  //console.log(char);
-  //   const characterSheet = new File([""], charSheetFile, {
-  //     type: "application/pdf"
-  //   });
 }
