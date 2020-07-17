@@ -6,7 +6,7 @@
   "dependencies": {
     "core-decorators": "^0.20.0",
     "gh-pages": "^2.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "pdfjs-dist": "^2.0.943",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
