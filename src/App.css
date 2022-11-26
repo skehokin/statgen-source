@@ -6,6 +6,12 @@ body {
   padding-left: 50px;
 }
 
+div {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .descriptors {
   display: flex;
   justify-content: space-around;
@@ -34,11 +40,7 @@ body {
   max-width: 100%;
   line-height: 70px;
 }
-.box {
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-}
+
 ul {
   padding: 10px;
 }

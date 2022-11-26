@@ -5,7 +5,7 @@ class Box extends Component {
     const { className, wrap } = this.props;
     return (
       <div
-        className={`box ${className ? className : ""} ${wrap ? "wrap" : ""}`}
+        className={`${className ? className : ""} ${wrap ? "wrap" : ""}`}
       >
         {this.props.children}
       </div>

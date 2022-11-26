@@ -1,0 +1,10 @@
+{
+    "compilerOptions":{
+        "include": ["src/**/*"],
+        "allowJS": true,
+        "checkJs": true,
+        "allowSyntheticDefaultImports": true,
+        "JSX": "react",
+        "resolveJsonModule": true,
+    }
+}

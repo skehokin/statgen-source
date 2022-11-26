@@ -1,4 +1,4 @@
-import raceInfo from "./races.json";
+import raceInfo from "../modules/overview/data-sets/races.json";
 
 //const raceInfo = JSON.parse(races);
 
@@ -99,7 +99,29 @@ const livingAreas = [
   "county",
   "swamp",
   "jungle",
-  "savana"
+  "savanna",
+  "future",
+  "past",
+  "present",
+  "creativity",
+  "arts",
+  "sciences",
+  "stars",
+  "sea",
+  "land",
+  "sky",
+  "mountains",
+  "ocean",
+    "river",
+    "lake",
+  "tundra",
+  "savannah",
+  "rainforest",
+  "arctic",
+  "equator",
+  "poles",
+  "tropics",
+    "world"
 ];
 const leaders = [
   "king",
